@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BVT Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BVT Test(failed)">
+    <classes>
+      <class name="TestCase.Student_Login">
+        <methods>
+          <include name="LoginTest" invocation-numbers="0 1 2 3"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCase.Student_Login -->
+      <class name="TestCase.TeacherLogin">
+        <methods>
+          <include name="teardown"/>
+          <include name="LoginTest" invocation-numbers="0 1 2 3"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- TestCase.TeacherLogin -->
+    </classes>
+  </test> <!-- BVT Test(failed) -->
+</suite> <!-- Failed suite [BVT Test Suite] -->
