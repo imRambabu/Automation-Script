@@ -36,11 +36,11 @@ public class BaseTest {
 		}
 		if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();// base
-			WebDriver driver = new ChromeDriver();// base
+			this. driver = new ChromeDriver();// base
 			driver.get("https://proschool.ai");// properties
 		} else if (prop.getProperty("browser").equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			this.driver = new FirefoxDriver();
 			driver.get("https://proschool.ai");// properties
 		}
 

@@ -5,7 +5,7 @@
     <classes>
       <class name="TestCase.Student_Login">
         <methods>
-          <include name="LoginTest" invocation-numbers="0 1 2 3"/>
+          <include name="LoginTest" invocation-numbers="1 2 3"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
@@ -13,8 +13,8 @@
       <class name="TestCase.TeacherLogin">
         <methods>
           <include name="teardown"/>
-          <include name="LoginTest" invocation-numbers="0 1 2 3"/>
           <include name="setup"/>
+          <include name="LoginTest" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- TestCase.TeacherLogin -->
     </classes>
